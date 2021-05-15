@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css personale -->
+    <link rel="stylesheet" href="../style/test.css">
+    <link rel="stylesheet" href="../style/game.css">
+
+    <!-- libreria fonts awesome -->
+    <script src="https://kit.fontawesome.com/ce25aa5dfe.js" crossorigin="anonymous"></script>
+
+    <!-- icona sito -->
+    <link 
+      rel="icon" 
+      href="../images/scimmia.jpg" 
+      type="image/gif"
+    />
+    <title>Domande</title>
+</head>
+<body>
+
+    <!-- corpo della pagina -->
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Domanda
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Punteggio
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h1 id="question">Qual'è la risposta a questa domanda?</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Scelta 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Scelta 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Scelta 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Scelta 4</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- script personale -->
+    <script src="../js/game.js"></script>
+</body>
+</html>

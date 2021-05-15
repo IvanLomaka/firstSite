@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css personale -->
+    <link rel="stylesheet" href="../style/test.css">
+    <link rel="stylesheet" href="../style/game.css">
+
+    <!-- libreria fonts awesome -->
+    <script src="https://kit.fontawesome.com/ce25aa5dfe.js" crossorigin="anonymous"></script>
+
+    <!-- icona sito -->
+    <link 
+      rel="icon" 
+      href="../images/scimmia.jpg" 
+      type="image/gif"
+    />
+    <title>Fine</title>
+</head>
+<body>
+
+    <!-- corpo della pagina -->
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Scrivi il tuo nome qui sotto per salvare il tuo punteggio!</h2>
+                <input type="text" name="name" id="username" placeholder="Scrivi qua il tuo nome">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Salva</button>
+            </form>
+            <a href="game.html" class="btn">Gioca ancora</a>
+            <a href="/" class="btn">Home<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+
+    <!-- script personale -->
+    <script src="../js/end.js"></script>
+</body>
+</html>
